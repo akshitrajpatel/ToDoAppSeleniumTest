@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Checkout the code from the repository
-                git 'path'
+                git 'https://github.com/akshitrajpatel/ToDoAppSeleniumTest.git'
                 
                 // Build the Maven project
                 sh 'mvn clean install'
