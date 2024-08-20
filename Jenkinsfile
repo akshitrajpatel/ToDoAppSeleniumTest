@@ -8,14 +8,14 @@ pipeline {
                 git 'https://github.com/akshitrajpatel/ToDoAppSeleniumTest.git'
                 
                 // Build the Maven project
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         
         stage('Test') {
             steps {
                 // Run Selenium tests
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
